@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корейский язык | Подготовка к экзамену</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="korea_style.css">
+</head>
+
+<body>
+
+    <div class="container" id="app">
+        <!-- Views will be rendered here by JS -->
+    </div>
+
+    <button id="theme-toggle" onclick="toggleTheme()"
+        style="position: fixed; top: 20px; right: 20px; background: var(--surface); border: none; padding: 10px; border-radius: 50%; box-shadow: var(--shadow); cursor: pointer; z-index: 200;">🌙</button>
+
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-value" id="stat-tickets">0</div>
+            <div class="stat-label">Билетов</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value" id="stat-words">0</div>
+            <div class="stat-label">Слов</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value" id="stat-streak">0</div>
+            <div class="stat-label">Серия</div>
+        </div>
+    </div>
+
+    <script src="korea_app.js"></script>
+</body>
+
+</html>
